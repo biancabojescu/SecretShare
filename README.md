@@ -1,5 +1,9 @@
 # SecretShare
 
-Această aplicație este scrisă în Python și implementează un sistem de împărțire și recombinare a secretelor utilizând schema de criptare Shamir's Secret Sharing și criptografia simetrică AES în modul EAX pentru securizare. 
+This application is written in Python and implements a system for sharing and recombining secrets using Shamir's Secret Sharing scheme and symmetric AES encryption in EAX mode for security.
 
-Utilizează biblioteca de criptografie pentru generarea cheilor aleatorii și a partajelor secrete, permitând partajarea sigură a unui fișier în multiple segmente criptate. La recombinare, aplicația verifică integritatea datelor criptate înainte de decriptare, asigurându-se că mesajul nu a fost alterat. Este un instrument eficient pentru gestionarea confidențialității datelor în sisteme distribuite.
+It utilizes a cryptography library for generating random keys and secret shares, enabling secure splitting of a file into multiple encrypted segments. Upon recomposition, the application verifies the integrity of the encrypted data before decryption, ensuring that the message has not been tampered with. It is an efficient tool for managing data confidentiality in distributed systems.
+
+# Available Commands:
+py secret_share.py -split n m 
+py secret_share.py -recompose file1.secret file2.secret
